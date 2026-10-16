@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DU-SRM National Tech Conclave & Hackathon 2026 | In Partnership with Microsoft</title>
+  
+  <!-- Tailwind CSS via Google CDN -->
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  
+  <!-- Font Configuration -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --ms-blue: #0078D4;
+      --ms-blue-dark: #005A9E;
+      --ms-blue-light: #EFF6FC;
+      --srm-navy: #0B2545;
+      --srm-gold: #C59B27;
+      --du-navy: #0F172A;
+      --du-gold: #D97706;
+      --slate-dark: #0F172A;
+    }
+    
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1E293B;
+      background-color: #F8FAFC;
+    }
+    
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    
+    /* Institutional header border accent */
+    .gov-strip {
+      background: linear-gradient(90deg, #0B2545 0%, #0078D4 50%, #107C41 100%);
+      height: 4px;
+    }
+    
+    /* Custom subtle scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F1F5F9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #CBD5E1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94A3B8;
+    }
+    
+    /* Print Stylesheet for Official Itinerary */
+    @media print {
+      header, footer, .no-print, button {
+        display: none !important;
+      }
+      .print-only {
+        display: block !important;
+      }
+      body {
+        background: white !important;
+        color: black !important;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-sky-100 selection:text-sky-900 min-h-screen flex flex-col">
+
+  <!-- Top Tricolor & Institutional Strip -->
+  <div class="gov-strip"></div>
+
+  <!-- Government & Academic Notice Bar -->
+  <aside aria-label="Official Announcement Bar" class="bg-slate-900 text-slate-200 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-950 text-emerald-300 border border-emerald-800">
+          OFFICIAL CONCLAVE
+        </span>
+        <span class="text-slate-300">Joint Academic & Industry Initiative | University of Delhi, North Campus</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <span class="flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          October 19, 11:00 AM &ndash; October 21, 3:00 PM IST
+        </span>
+        <span class="hidden md:inline text-slate-500">|</span>
+        <a href="#venue" class="hidden md:inline hover:text-white underline decoration-slate-600 transition">Conference Centre, DU</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Institutional Brand Lockup -->
+        <a href="#" class="flex items-center gap-3 sm:gap-5 group">
+          <!-- SRM KTR Official Crest (SVG Vector) -->
+          <div class="flex items-center gap-2.5">
+            <svg class="w-10 h-10 flex-shrink-0" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="SRM Institute of Science and Technology Logo">
+              <circle cx="50" cy="50" r="48" fill="#0B2545" stroke="#C59B27" stroke-width="3"/>
+              <!-- Book & Rays -->
+              <path d="M50 20 L50 48 M50 20 L35 28 M50 20 L65 28 M50 20 L25 38 M50 20 L75 38" stroke="#C59B27" stroke-width="2" stroke-linecap="round"/>
+              <path d="M22 62 C32 54 44 54 50 58 C56 54 68 54 78 62 L78 76 C68 68 56 68 50 72 C44 68 32 68 22 76 Z" fill="#F8FAFC" stroke="#C59B27" stroke-width="1.5"/>
+              <line x1="50" y1="58" x2="50" y2="72" stroke="#0B2545" stroke-width="1.5"/>
+              <!-- Gear / Atom Orbit -->
+              <ellipse cx="50" cy="46" rx="16" ry="6" stroke="#C59B27" stroke-width="1.2" transform="rotate(-18 50 46)"/>
+              <ellipse cx="50" cy="46" rx="16" ry="6" stroke="#C59B27" stroke-width="1.2" transform="rotate(18 50 46)"/>
+              <circle cx="50" cy="46" r="3" fill="#C59B27"/>
+              <text x="50" y="88" text-anchor="middle" font-size="6.5" font-weight="bold" fill="#F8FAFC" letter-spacing="0.8">SRM KTR</text>
+            </svg>
+            <div class="hidden sm:block">
+              <span class="block text-xs font-bold tracking-tight text-slate-900 uppercase">SRM Institute of Science & Tech</span>
+              <span class="block text-[11px] font-semibold text-slate-600">Kattankulathur Campus &bull; Principal Sponsor</span>
+            </div>
+          </div>
+
+          <div class="h-8 w-px bg-slate-300"></div>
+
+          <!-- Microsoft Partner Lockup (Official 4-Square SVG) -->
+          <div class="flex items-center gap-2">
+            <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Microsoft Logo">
+              <rect x="1" y="1" width="10" height="10" fill="#F25022"/>
+              <rect x="13" y="1" width="10" height="10" fill="#7FBA00"/>
+              <rect x="1" y="13" width="10" height="10" fill="#00A4EF"/>
+              <rect x="13" y="13" width="10" height="10" fill="#FFB900"/>
+            </svg>
+            <div class="hidden sm:block">
+              <span class="block text-xs font-bold tracking-tight text-slate-900">Microsoft</span>
+              <span class="block text-[11px] font-medium text-slate-600">Technology Partner</span>
+            </div>
+          </div>
+
+          <div class="h-8 w-px bg-slate-300 hidden md:block"></div>
+
+          <!-- University of Delhi Lockup -->
+          <div class="hidden md:flex items-center gap-2">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="University of Delhi Logo">
+              <circle cx="50" cy="50" r="46" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.5"/>
+              <circle cx="50" cy="50" r="39" fill="none" stroke="#D97706" stroke-width="1.5" stroke-dasharray="3 2"/>
+              <!-- Lotus & Crest silhouette -->
+              <path d="M50 30 C56 38 64 42 64 54 C64 62 58 66 50 66 C42 66 36 62 36 54 C36 42 44 38 50 30 Z" fill="#0F172A"/>
+              <circle cx="50" cy="46" r="3.5" fill="#D97706"/>
+              <path d="M42 66 Q50 72 58 66 Q54 75 46 75 Z" fill="#D97706"/>
+              <text x="50" y="86" text-anchor="middle" font-size="7" font-weight="bold" fill="#0F172A">UNIV. OF DELHI</text>
+            </svg>
+            <div>
+              <span class="block text-xs font-bold tracking-tight text-slate-900">University of Delhi</span>
+              <span class="block text-[11px] font-medium text-slate-600">Host & Venue</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+          <a href="#about" class="hover:text-sky-600 transition">About</a>
+          <a href="#itinerary" class="text-sky-700 font-bold hover:text-sky-800 transition flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            3-Day Itinerary
+          </a>
+          <a href="#tracks" class="hover:text-sky-600 transition">Tracks & Challenges</a>
+          <a href="#prizes" class="hover:text-sky-600 transition">Prizes</a>
+          <a href="#speakers" class="hover:text-sky-600 transition">Speakers</a>
+          <a href="#venue" class="hover:text-sky-600 transition">Venue & Travel</a>
+          <a href="#faq" class="hover:text-sky-600 transition">FAQ</a>
+        </nav>
+
+        <!-- Primary CTA Buttons -->
+        <div class="flex items-center gap-3">
+          <button onclick="downloadICS()" class="hidden md:inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 rounded-lg transition" title="Add all sessions to Google / Outlook Calendar">
+            <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            Add to Cal (.ics)
+          </button>
+          
+          <button onclick="openRegistrationModal()" class="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-bold text-white bg-[#0078D4] hover:bg-[#005A9E] shadow-sm hover:shadow rounded-lg transition focus:ring-4 focus:ring-sky-100">
+            <span>Register Team</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-slate-600 hover:text-slate-900 border border-slate-200 rounded-lg" aria-label="Toggle Navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-5 space-y-2">
+      <a href="#about" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 rounded">About Event</a>
+      <a href="#itinerary" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-bold text-sky-700 hover:bg-sky-50 rounded">Full 3-Day Itinerary (Oct 19-21)</a>
+      <a href="#tracks" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 rounded">Hackathon Tracks</a>
+      <a href="#prizes" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 rounded">Prizes & Grants</a>
+      <a href="#speakers" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 rounded">Speakers & Mentors</a>
+      <a href="#venue" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 rounded">Venue & Logistics</a>
+      <a href="#faq" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 rounded">Frequently Asked Questions</a>
+      <div class="pt-2 flex flex-col gap-2">
+        <button onclick="downloadICS()" class="w-full text-center px-3 py-2 text-xs font-semibold text-slate-700 bg-slate-100 rounded-lg">Download Schedule (.ics)</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (Corporate Tech & Academic Rigor - No AI Slop, No Purple) -->
+  <main class="flex-grow">
+    <section class="relative bg-slate-900 text-white overflow-hidden border-b border-slate-800">
+      <!-- Architectural Grid Lines & Engineering Background -->
+      <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: linear-gradient(#38bdf8 1px, transparent 1px), linear-gradient(to right, #38bdf8 1px, transparent 1px); background-size: 40px 40px;"></div>
+      <div class="absolute -top-32 right-0 w-96 h-96 bg-sky-600/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 left-1/4 w-80 h-80 bg-emerald-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 lg:pt-16 lg:pb-20">
+        
+        <!-- Metadata Badges -->
+        <div class="flex flex-wrap items-center gap-2 sm:gap-3 mb-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-slate-800/90 text-slate-200 border border-slate-700">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            National Collegiate Conclave & 48-Hour Hackathon
+          </div>
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-sky-950 text-sky-200 border border-sky-800">
+            <svg class="w-3.5 h-3.5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            Venue: Delhi University (North Campus)
+          </div>
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-950 text-amber-200 border border-amber-800">
+            <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            ₹3,50,000 Cash Pool + $15k Azure Grants
+          </div>
+        </div>
+
+        <!-- Main Title & Subtitle -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          
+          <div class="lg:col-span-8 space-y-5">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
+              DU-SRM National Tech Conclave 2026
+            </h1>
+            <p class="text-lg sm:text-xl font-medium text-slate-300 leading-relaxed max-w-2xl">
+              Sponsored by <strong class="text-white underline decoration-amber-400 decoration-2 underline-offset-4">SRM Institute of Science & Technology (SRM KTR)</strong> in strategic partnership with <strong class="text-white underline decoration-sky-400 decoration-2 underline-offset-4">Microsoft</strong>, hosted at the <strong class="text-white">University of Delhi</strong>.
+            </p>
+            <div class="p-3.5 bg-slate-800/80 border border-slate-700/80 rounded-xl text-sm text-slate-300 flex items-start sm:items-center gap-3">
+              <div class="p-2 bg-sky-950 text-sky-400 border border-sky-800 rounded-lg flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <span class="font-bold text-white block">Official Conclave Window:</span>
+                <span>Starts <strong>19 October 2026 at 11:00 AM IST</strong> &bull; Concludes <strong>21 October 2026 at 3:00 PM IST</strong> (52 Continuous Hours on Campus)</span>
+              </div>
+            </div>
+
+            <!-- Action CTAs -->
+            <div class="pt-2 flex flex-wrap items-center gap-3 sm:gap-4">
+              <button onclick="openRegistrationModal()" class="px-6 py-3.5 text-base font-bold text-white bg-[#0078D4] hover:bg-[#005A9E] rounded-xl shadow-lg shadow-sky-900/30 transition transform active:scale-95 flex items-center gap-2">
+                <span>Register Your Team Now</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </button>
+              
+              <a href="#itinerary" class="px-5 py-3.5 text-base font-semibold text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-xl transition flex items-center gap-2">
+                <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                <span>View Full Itinerary</span>
+              </a>
+
+              <a href="#rules" class="px-4 py-3.5 text-sm font-semibold text-slate-400 hover:text-white transition">
+                Rulebook & Eligibility &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Live Real-Time Countdown Card -->
+          <div class="lg:col-span-4">
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 shadow-2xl backdrop-blur-sm">
+              <div class="flex items-center justify-between border-b border-slate-700 pb-4 mb-5">
+                <span class="text-xs font-bold tracking-wider uppercase text-slate-400 flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                  Conclave Countdown
+                </span>
+                <span class="text-xs font-mono font-medium text-sky-400 bg-sky-950/80 px-2 py-0.5 rounded border border-sky-800">
+                  Target: 19 Oct 11:00 AM
+                </span>
+              </div>
+
+              <!-- 4 Digit Counters -->
+              <div class="grid grid-cols-4 gap-2 text-center mb-5">
+                <div class="bg-slate-900 border border-slate-700 rounded-lg p-2.5">
+                  <span id="cd-days" class="block font-mono text-2xl sm:text-3xl font-extrabold text-white">00</span>
+                  <span class="block text-[11px] font-semibold text-slate-400 uppercase mt-0.5">Days</span>
+                </div>
+                <div class="bg-slate-900 border border-slate-700 rounded-lg p-2.5">
+                  <span id="cd-hours" class="block font-mono text-2xl sm:text-3xl font-extrabold text-white">00</span>
+                  <span class="block text-[11px] font-semibold text-slate-400 uppercase mt-0.5">Hours</span>
+                </div>
+                <div class="bg-slate-900 border border-slate-700 rounded-lg p-2.5">
+                  <span id="cd-mins" class="block font-mono text-2xl sm:text-3xl font-extrabold text-white">00</span>
+                  <span class="block text-[11px] font-semibold text-slate-400 uppercase mt-0.5">Mins</span>
+                </div>
+                <div class="bg-slate-900 border border-slate-700 rounded-lg p-2.5">
+                  <span id="cd-secs" class="block font-mono text-2xl sm:text-3xl font-extrabold text-emerald-400">00</span>
+                  <span class="block text-[11px] font-semibold text-slate-400 uppercase mt-0.5">Secs</span>
+                </div>
+              </div>
+
+              <!-- Key Fast Facts -->
+              <div class="space-y-2.5 text-xs text-slate-300">
+                <div class="flex items-center justify-between py-1.5 border-b border-slate-700/60">
+                  <span class="text-slate-400">Total Duration:</span>
+                  <span class="font-bold text-white">52 Hours (3 Calendar Days)</span>
+                </div>
+                <div class="flex items-center justify-between py-1.5 border-b border-slate-700/60">
+                  <span class="text-slate-400">Hackathon Coding Window:</span>
+                  <span class="font-bold text-white">40 Continuous Sprint Hours</span>
+                </div>
+                <div class="flex items-center justify-between py-1.5 border-b border-slate-700/60">
+                  <span class="text-slate-400">Team Size:</span>
+                  <span class="font-bold text-white">2 &ndash; 4 Members</span>
+                </div>
+                <div class="flex items-center justify-between py-1.5">
+                  <span class="text-slate-400">Registration Fee:</span>
+                  <span class="font-bold text-emerald-400">Zero (Full Sponsorship by SRM & MS)</span>
+                </div>
+              </div>
+
+              <div class="mt-5 pt-4 border-t border-slate-700">
+                <p class="text-[11px] text-slate-400 leading-tight">
+                  <strong class="text-slate-300">Note for Outstation Teams:</strong> Free dormitory accommodation provided at DU North Campus hostels for verified teams traveling from SRM KTR and other states.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Trust Bar / Institutional Lockup Bar -->
+      <div class="border-t border-slate-800 bg-slate-950/60 py-6 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Convened Jointly by:</span>
+          
+          <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-slate-300 text-xs sm:text-sm">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-white">SRM Institute of Science & Technology</span>
+              <span class="text-slate-500">(Kattankulathur, Chennai)</span>
+            </div>
+            <span class="text-slate-600 hidden sm:inline">&bull;</span>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-white">Microsoft India</span>
+              <span class="text-slate-500">(Azure Engineering Team)</span>
+            </div>
+            <span class="text-slate-600 hidden sm:inline">&bull;</span>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-white">University of Delhi</span>
+              <span class="text-slate-500">(Faculty of Technology & CIC)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Executive Overview & Real Background -->
+    <section id="about" class="py-14 sm:py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded text-xs font-bold bg-sky-50 text-sky-800 border border-sky-200">
+              ACADEMIC-INDUSTRY SYNERGY
+            </div>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
+              Bridging SRM KTR’s Research Prowess with Delhi University’s Innovation Hub
+            </h2>
+            <p class="text-base text-slate-700 leading-relaxed">
+              The <strong>DU-SRM National Tech Conclave 2026</strong> is a premier 3-day technical symposium and intense 48-hour national hackathon. Sponsored directly by <strong>SRM Institute of Science and Technology, Kattankulathur (SRM KTR)</strong> under its Innovation &amp; Academic Outreach grant, the event is hosted in physical partnership with the <strong>University of Delhi</strong> at its North Campus Conference Centre.
+            </p>
+            <p class="text-base text-slate-700 leading-relaxed">
+              As strategic technology partner, <strong>Microsoft India</strong> provides direct engineering mentorship, Azure OpenAI cloud sandboxes, enterprise architecture evaluation, and immediate recruitment consideration for top performers.
+            </p>
+
+            <!-- 3 Pillars Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-3">
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-sm mb-2.5">
+                  01
+                </div>
+                <h3 class="font-bold text-slate-900 text-sm mb-1">Rigorous Engineering</h3>
+                <p class="text-xs text-slate-600">Production-grade systems, microservices, and distributed cloud computing — strictly no prototype vaporware.</p>
+              </div>
+
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm mb-2.5">
+                  02
+                </div>
+                <h3 class="font-bold text-slate-900 text-sm mb-1">Microsoft Mentorship</h3>
+                <p class="text-xs text-slate-600">Direct architecture reviews and 1-on-1 code clinics with Microsoft Azure Cloud Solution Architects.</p>
+              </div>
+
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-sm mb-2.5">
+                  03
+                </div>
+                <h3 class="font-bold text-slate-900 text-sm mb-1">Incubation &amp; Grants</h3>
+                <p class="text-xs text-slate-600">SRM KTR Innovation Lab seed support, Microsoft for Startups Founders Hub access, and ₹3.5 Lakh prize pool.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Official Partner Credentials Card -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 shadow-sm">
+              <h3 class="text-base font-bold text-slate-900 pb-3 mb-4 border-b border-slate-200 flex items-center justify-between">
+                <span>Official Partner Credentials</span>
+                <span class="text-xs font-semibold text-slate-500">Verified Lockup</span>
+              </h3>
+
+              <!-- SRM KTR Detail -->
+              <div class="flex items-start gap-3.5 pb-4 mb-4 border-b border-slate-200">
+                <div class="p-2 bg-white rounded-lg border border-slate-200 flex-shrink-0">
+                  <svg class="w-8 h-8" viewBox="0 0 100 100" fill="none">
+                    <circle cx="50" cy="50" r="46" fill="#0B2545"/>
+                    <path d="M50 22 L35 30 L65 30 Z" fill="#C59B27"/>
+                    <text x="50" y="62" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFFFFF">SRM</text>
+                    <text x="50" y="78" text-anchor="middle" font-size="7" font-weight="bold" fill="#C59B27">KTR</text>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-slate-900">SRM Institute of Science & Technology</h4>
+                  <p class="text-xs text-slate-600 mt-0.5">Kattankulathur, Chengalpattu, Tamil Nadu &ndash; 603203. NAAC A++ Accredited. Principal Event Sponsor &amp; Co-convener.</p>
+                </div>
+              </div>
+
+              <!-- Microsoft Detail -->
+              <div class="flex items-start gap-3.5 pb-4 mb-4 border-b border-slate-200">
+                <div class="p-2 bg-white rounded-lg border border-slate-200 flex-shrink-0">
+                  <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                    <rect x="2" y="2" width="9" height="9" fill="#F25022"/>
+                    <rect x="13" y="2" width="9" height="9" fill="#7FBA00"/>
+                    <rect x="2" y="13" width="9" height="9" fill="#00A4EF"/>
+                    <rect x="13" y="13" width="9" height="9" fill="#FFB900"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-slate-900">Microsoft India</h4>
+                  <p class="text-xs text-slate-600 mt-0.5">Technology &amp; Cloud Platform Partner. Providing Azure Infrastructure, OpenAI API Access, Developer Tooling &amp; Expert Jury.</p>
+                </div>
+              </div>
+
+              <!-- DU Detail -->
+              <div class="flex items-start gap-3.5">
+                <div class="p-2 bg-white rounded-lg border border-slate-200 flex-shrink-0">
+                  <svg class="w-8 h-8" viewBox="0 0 100 100" fill="none">
+                    <circle cx="50" cy="50" r="46" fill="#0F172A"/>
+                    <path d="M50 30 C55 36 62 40 62 50 C62 58 56 62 50 62 C44 62 38 58 38 50 C38 40 45 36 50 30 Z" fill="#D97706"/>
+                    <text x="50" y="78" text-anchor="middle" font-size="11" font-weight="bold" fill="#FFFFFF">DU</text>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-slate-900">University of Delhi (North Campus)</h4>
+                  <p class="text-xs text-slate-600 mt-0.5">Host University &amp; Infrastructure Partner. Faculty of Technology &amp; Conference Centre, University Enclave, Delhi &ndash; 110007.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DETAILED 3-DAY ITINERARY SECTION -->
+    <section id="itinerary" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded text-xs font-bold bg-sky-100 text-sky-800 border border-sky-300">
+              OFFICIAL PROGRAM SCHEDULE
+            </div>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">
+              Comprehensive 3-Day Event Itinerary
+            </h2>
+            <p class="text-sm sm:text-base text-slate-600 mt-1 max-w-2xl">
+              Strictly scheduled from <strong>October 19, 11:00 AM</strong> to <strong>October 21, 3:00 PM</strong> at Delhi University North Campus.
+            </p>
+          </div>
+
+          <!-- Schedule Utility Actions -->
+          <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
+            <button onclick="downloadICS()" class="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 border border-slate-300 rounded-lg shadow-sm transition">
+              <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              Export to iCal / Outlook
+            </button>
+            <button onclick="window.print()" class="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 border border-slate-300 rounded-lg shadow-sm transition">
+              <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+              Print Itinerary
+            </button>
+          </div>
+        </div>
+
+        <!-- DAY SELECTOR TABS -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 mb-6 bg-white p-2 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="flex flex-wrap sm:flex-nowrap gap-2 w-full sm:w-auto" role="tablist">
+            <!-- Day 1 Tab -->
+            <button id="tab-btn-day1" onclick="switchDay('day1')" role="tab" aria-selected="true" class="flex-1 sm:flex-none text-left sm:text-center px-4 sm:px-6 py-3 rounded-xl font-bold text-sm transition bg-[#0078D4] text-white shadow-sm flex items-center gap-2.5 justify-center">
+              <span class="w-2.5 h-2.5 rounded-full bg-white"></span>
+              <div>
+                <span class="block leading-none">Day 1 &bull; Oct 19</span>
+                <span class="block text-[11px] font-normal opacity-90 mt-0.5">11:00 AM &ndash; 10:00 PM</span>
+              </div>
+            </button>
+
+            <!-- Day 2 Tab -->
+            <button id="tab-btn-day2" onclick="switchDay('day2')" role="tab" aria-selected="false" class="flex-1 sm:flex-none text-left sm:text-center px-4 sm:px-6 py-3 rounded-xl font-bold text-sm transition bg-slate-100 text-slate-700 hover:bg-slate-200 flex items-center gap-2.5 justify-center">
+              <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+              <div>
+                <span class="block leading-none">Day 2 &bull; Oct 20</span>
+                <span class="block text-[11px] font-normal text-slate-500 mt-0.5">24-Hour Active Sprint</span>
+              </div>
+            </button>
+
+            <!-- Day 3 Tab -->
+            <button id="tab-btn-day3" onclick="switchDay('day3')" role="tab" aria-selected="false" class="flex-1 sm:flex-none text-left sm:text-center px-4 sm:px-6 py-3 rounded-xl font-bold text-sm transition bg-slate-100 text-slate-700 hover:bg-slate-200 flex items-center gap-2.5 justify-center">
+              <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+              <div>
+                <span class="block leading-none">Day 3 &bull; Oct 21</span>
+                <span class="block text-[11px] font-normal text-slate-500 mt-0.5">Wrap-up &bull; Concludes 3:00 PM</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Session Filter Tag Pills -->
+          <div class="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 px-2 sm:px-0">
+            <span class="text-xs font-semibold text-slate-500 hidden xl:inline">Filter:</span>
+            <button onclick="filterSchedule('all')" class="filter-btn active-filter px-2.5 py-1 text-xs font-semibold rounded-md bg-slate-800 text-white">All</button>
+            <button onclick="filterSchedule('keynote')" class="filter-btn px-2.5 py-1 text-xs font-semibold rounded-md bg-slate-100 text-slate-700 hover:bg-slate-200">Keynotes</button>
+            <button onclick="filterSchedule('hackathon')" class="filter-btn px-2.5 py-1 text-xs font-semibold rounded-md bg-slate-100 text-slate-700 hover:bg-slate-200">Hackathon</button>
+            <button onclick="filterSchedule('workshop')" class="filter-btn px-2.5 py-1 text-xs font-semibold rounded-md bg-slate-100 text-slate-700 hover:bg-slate-200">Workshops</button>
+            <button onclick="filterSchedule('meals')" class="filter-btn px-2.5 py-1 text-xs font-semibold rounded-md bg-slate-100 text-slate-700 hover:bg-slate-200">Food &amp; Breaks</button>
+          </div>
+        </div>
+
+        <!-- TIMELINE CONTAINER -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-8 shadow-sm">
+          
+          <!-- ================= DAY 1 CONTENT ================= -->
+          <div id="day1-content" class="day-schedule-pane space-y-6">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Day 1: Monday, 19 October 2026</h3>
+                <p class="text-xs text-slate-500 mt-0.5">Theme: Inauguration, Keynote Addresses, Technical Masterclasses &amp; Hackathon Launch</p>
+              </div>
+              <span class="text-xs font-mono font-bold px-3 py-1 bg-sky-50 text-sky-800 rounded-md border border-sky-200">
+                Window: 11:00 AM &ndash; 10:00 PM
+              </span>
+            </div>
+
+            <div class="relative border-l-2 border-slate-200 ml-3 sm:ml-4 pl-5 sm:pl-8 space-y-8">
+              
+              <!-- Event 1.1: 11:00 AM -->
+              <div class="timeline-item relative" data-category="keynote">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-[#0078D4]"></div>
+                <div class="bg-slate-50 hover:bg-slate-100/80 transition p-4 sm:p-5 rounded-xl border border-slate-200">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span class="font-mono text-xs font-bold text-sky-800 bg-sky-100 px-2.5 py-1 rounded">11:00 AM &ndash; 12:00 PM IST</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-[11px] font-semibold text-slate-600 bg-white border border-slate-200 px-2 py-0.5 rounded">Foyer &amp; Desk A</span>
+                      <span class="text-[11px] font-bold text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">Delegate Check-In</span>
+                    </div>
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900">Delegate Registration, Security Credentialing &amp; Welcome Kit Distribution</h4>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                    Mandatory biometric ID verification for all pre-registered student teams from SRM KTR, Delhi University, and participating national colleges. Collection of official Conclave Badges, Microsoft Azure Student Sandbox Vouchers, and Welcome Packs.
+                  </p>
+                  <div class="mt-3 flex items-center gap-3 text-xs text-slate-500">
+                    <span class="font-semibold text-slate-700">&bull; Requirements:</span>
+                    <span>Valid College/University ID Card &amp; Gov ID Proof (Aadhaar/Passport).</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event 1.2: 12:00 PM -->
+              <div class="timeline-item relative" data-category="keynote">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-slate-800"></div>
+                <div class="bg-slate-50 hover:bg-slate-100/80 transition p-4 sm:p-5 rounded-xl border border-slate-200">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span class="font-mono text-xs font-bold text-slate-800 bg-slate-200 px-2.5 py-1 rounded">12:00 PM &ndash; 01:15 PM IST</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-[11px] font-semibold text-slate-600 bg-white border border-slate-200 px-2 py-0.5 rounded">Sir Shankar Lal Concert Hall</span>
+                      <span class="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Inaugural Plenary</span>
+                    </div>
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900">Grand Inaugural Ceremony &amp; Opening Industry Keynotes</h4>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                    Traditional Lamp Lighting ceremony attended by dignitaries from University of Delhi, SRM Institute of Science &amp; Technology (Kattankulathur), and Microsoft Leadership.
+                  </p>
+                  <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs bg-white p-3 rounded-lg border border-slate-200">
+                    <div>
+                      <span class="font-bold text-slate-900 block">Welcome Address:</span>
+                      <span class="text-slate-600">Dean, Faculty of Technology, University of Delhi</span>
+                    </div>
+                    <div>
+                      <span class="font-bold text-slate-900 block">Keynote Address:</span>
+                      <span class="text-slate-600">&ldquo;Enterprise Cloud Architecture &amp; The Sovereign AI Frontier&rdquo; &ndash; Microsoft India Leadership</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event 1.3: 01:15 PM -->
+              <div class="timeline-item relative" data-category="meals">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-amber-500"></div>
+                <div class="bg-amber-50/50 p-4 rounded-xl border border-amber-200">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono text-xs font-bold text-amber-800 bg-amber-100 px-2.5 py-1 rounded">01:15 PM &ndash; 02:15 PM IST</span>
+                    <span class="text-[11px] font-semibold text-amber-900 bg-amber-100/80 px-2 py-0.5 rounded">Dining Lawns</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-900">Networking Luncheon &amp; Team Mixer</h4>
+                  <p class="text-xs text-slate-600 mt-0.5">Complimentary buffet lunch provided for all delegates, jury members, and faculty coordinators.</p>
+                </div>
+              </div>
+
+              <!-- Event 1.4: 02:15 PM -->
+              <div class="timeline-item relative" data-category="workshop">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-sky-600"></div>
+                <div class="bg-slate-50 hover:bg-slate-100/80 transition p-4 sm:p-5 rounded-xl border border-slate-200">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span class="font-mono text-xs font-bold text-sky-800 bg-sky-100 px-2.5 py-1 rounded">02:15 PM &ndash; 04:00 PM IST</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-[11px] font-semibold text-slate-600 bg-white border border-slate-200 px-2 py-0.5 rounded">Seminar Halls 1 &amp; 2</span>
+                      <span class="text-[11px] font-bold text-sky-800 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">Parallel Masterclasses</span>
+                    </div>
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900">Parallel Technical Masterclasses &amp; Cloud Deep Dives</h4>
+                  <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                    <div class="p-3 bg-white rounded-lg border border-slate-200">
+                      <span class="font-bold text-sky-900 block mb-1">Track A (Microsoft Azure):</span>
+                      <p class="text-slate-600">Architecting Resilient Multi-Region Cloud Solutions with Azure Cosmos DB &amp; Azure Kubernetes Service (AKS).</p>
+                    </div>
+                    <div class="p-3 bg-white rounded-lg border border-slate-200">
+                      <span class="font-bold text-emerald-900 block mb-1">Track B (SRM KTR Computing Hub):</span>
+                      <p class="text-slate-600">Optimizing High-Throughput Real-Time Data Pipelines: Kafka, Vector Databases, and Scalable Indexing.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event 1.5: 04:00 PM -->
+              <div class="timeline-item relative" data-category="meals">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-amber-500"></div>
+                <div class="bg-amber-50/50 p-3.5 rounded-xl border border-amber-200 flex items-center justify-between">
+                  <div>
+                    <span class="font-mono text-xs font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded mr-2">04:00 PM &ndash; 04:30 PM IST</span>
+                    <span class="text-xs font-bold text-slate-900">High Tea &amp; Mentor Matching Session</span>
+                  </div>
+                  <span class="text-[11px] text-slate-500">Main Foyer</span>
+                </div>
+              </div>
+
+              <!-- Event 1.6: 04:30 PM -->
+              <div class="timeline-item relative" data-category="hackathon">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-emerald-600"></div>
+                <div class="bg-slate-50 hover:bg-slate-100/80 transition p-4 sm:p-5 rounded-xl border border-slate-200">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span class="font-mono text-xs font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded">04:30 PM &ndash; 05:45 PM IST</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-[11px] font-semibold text-slate-600 bg-white border border-slate-200 px-2 py-0.5 rounded">Main Auditorium</span>
+                      <span class="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Hackathon Kickoff</span>
+                    </div>
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900">Problem Statement Reveal, API Sandbox Handout &amp; Judging Rubrics</h4>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                    Unveiling of the 4 official challenge tracks. Distribution of Microsoft Azure subscription keys ($5,000 quota per team), GitHub Enterprise repositories, and baseline datasets.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Event 1.7: 06:00 PM -->
+              <div class="timeline-item relative" data-category="hackathon">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-emerald-600 border-4 border-emerald-200"></div>
+                <div class="bg-emerald-900 text-white p-4 sm:p-5 rounded-xl border border-emerald-800 shadow-md">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="font-mono text-xs font-bold text-emerald-300 bg-emerald-950 px-2.5 py-1 rounded border border-emerald-700">06:00 PM SHARP</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-emerald-200 bg-emerald-800/80 px-2.5 py-0.5 rounded">HACKATHON TIMER COMMENCES</span>
+                  </div>
+                  <h4 class="text-lg font-extrabold text-white">40-Hour Continuous Sprint Starts</h4>
+                  <p class="text-xs sm:text-sm text-emerald-100 mt-1">
+                    Teams report to their designated lab tables (DU Conference Centre Labs A, B, and Central Computing Facility). Power drops, gigabit LAN, and Wi-Fi networks unlocked.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Event 1.8: 08:30 PM -->
+              <div class="timeline-item relative" data-category="meals">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-amber-500"></div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono text-xs font-bold text-slate-700 bg-slate-200 px-2.5 py-1 rounded">08:30 PM &ndash; 09:30 PM IST</span>
+                    <span class="text-[11px] text-slate-500">Dining Annex</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-900">Dinner &amp; First Architecture Check-In</h4>
+                  <p class="text-xs text-slate-600 mt-0.5">Dinner served. Roving mentors from SRM KTR and DU available for informal architectural consultation.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ================= DAY 2 CONTENT ================= -->
+          <div id="day2-content" class="day-schedule-pane hidden space-y-6">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Day 2: Tuesday, 20 October 2026</h3>
+                <p class="text-xs text-slate-500 mt-0.5">Theme: Non-stop Building, Mandatory Architecture Evaluation, Tech Clinics &amp; Night Hack</p>
+              </div>
+              <span class="text-xs font-mono font-bold px-3 py-1 bg-emerald-50 text-emerald-800 rounded-md border border-emerald-200">
+                Window: 24-Hour Continuous Operations
+              </span>
+            </div>
+
+            <div class="relative border-l-2 border-slate-200 ml-3 sm:ml-4 pl-5 sm:pl-8 space-y-8">
+              
+              <!-- Event 2.1: 08:00 AM -->
+              <div class="timeline-item relative" data-category="meals">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-amber-500"></div>
+                <div class="bg-amber-50/50 p-4 rounded-xl border border-amber-200">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono text-xs font-bold text-amber-800 bg-amber-100 px-2.5 py-1 rounded">08:00 AM &ndash; 09:00 AM IST</span>
+                    <span class="text-[11px] text-slate-500">Dining Annex &amp; Lawn</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-900">Power Breakfast &amp; Morning Standup</h4>
+                  <p class="text-xs text-slate-600 mt-0.5">Fresh coffee, South Indian &amp; continental breakfast. Teams submit their morning status board updates.</p>
+                </div>
+              </div>
+
+              <!-- Event 2.2: 09:30 AM -->
+              <div class="timeline-item relative" data-category="hackathon">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-sky-600"></div>
+                <div class="bg-slate-50 hover:bg-slate-100/80 transition p-4 sm:p-5 rounded-xl border border-slate-200">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span class="font-mono text-xs font-bold text-sky-800 bg-sky-100 px-2.5 py-1 rounded">09:30 AM &ndash; 12:30 PM IST</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-[11px] font-semibold text-slate-600 bg-white border border-slate-200 px-2 py-0.5 rounded">All Labs</span>
+                      <span class="text-[11px] font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">Crucial Milestone</span>
+                    </div>
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900">Mandatory Mentorship Round 1: Architecture &amp; Scalability Review</h4>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                    Every team receives a formal 10-minute tabletop review by a paired jury composed of 1 Microsoft Cloud Solution Architect and 1 SRM KTR Senior Faculty member. Teams must demonstrate initial repository commits, database schemas, and microservice diagrams.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Event 2.3: 01:00 PM -->
+              <div class="timeline-item relative" data-category="meals">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-amber-500"></div>
+                <div class="bg-amber-50/50 p-4 rounded-xl border border-amber-200">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono text-xs font-bold text-amber-800 bg-amber-100 px-2.5 py-1 rounded">01:00 PM &ndash; 02:00 PM IST</span>
+                    <span class="text-[11px] text-slate-500">Dining Annex</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-900">Lunch Break &amp; Mentor Debrief</h4>
+                  <p class="text-xs text-slate-600 mt-0.5">Jury aggregates Milestone 1 scores while teams refuel.</p>
+                </div>
+              </div>
+
+              <!-- Event 2.4: 02:30 PM -->
+              <div class="timeline-item relative" data-category="workshop">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-slate-800"></div>
+                <div class="bg-slate-50 hover:bg-slate-100/80 transition p-4 sm:p-5 rounded-xl border border-slate-200">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span class="font-mono text-xs font-bold text-slate-800 bg-slate-200 px-2.5 py-1 rounded">02:30 PM &ndash; 04:00 PM IST</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-[11px] font-semibold text-slate-600 bg-white border border-slate-200 px-2 py-0.5 rounded">Conference Hall B</span>
+                      <span class="text-[11px] font-bold text-sky-800 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">Interactive Clinic</span>
+                    </div>
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900">Microsoft Hands-on Clinic: Enterprise Integration with Azure AI &amp; Copilot</h4>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                    Optional technical drop-in workshop for teams seeking to integrate Azure OpenAI embeddings, Semantic Kernel, and GitHub Copilot API optimizations directly into their prototypes.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Event 2.5: 06:00 PM -->
+              <div class="timeline-item relative" data-category="hackathon">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-emerald-600"></div>
+                <div class="bg-slate-50 hover:bg-slate-100/80 transition p-4 sm:p-5 rounded-xl border border-slate-200">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span class="font-mono text-xs font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded">06:00 PM SHARP</span>
+                    <span class="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Milestone Checkpoint 2</span>
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900">Mid-Point Code Push &amp; API Integration Freeze</h4>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                    Automated GitHub action verification. Verification of working end-to-end user flows and deployed staging URL on Azure.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Event 2.6: 08:30 PM -->
+              <div class="timeline-item relative" data-category="meals">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-amber-500"></div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono text-xs font-bold text-slate-700 bg-slate-200 px-2.5 py-1 rounded">08:30 PM &ndash; 09:30 PM IST</span>
+                    <span class="text-[11px] text-slate-500">Dining Annex</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-900">Dinner &amp; Midnight Fuel Logistics</h4>
+                  <p class="text-xs text-slate-600 mt-0.5">Dinner served. Tea, coffee, and energy beverage stations remain operational through the night.</p>
+                </div>
+              </div>
+
+              <!-- Event 2.7: 11:30 PM -->
+              <div class="timeline-item relative" data-category="hackathon">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-slate-900 border-4 border-slate-400"></div>
+                <div class="bg-slate-900 text-white p-4 sm:p-5 rounded-xl border border-slate-700">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono text-xs font-bold text-sky-400 bg-slate-800 px-2 py-0.5 rounded">11:30 PM &ndash; 02:00 AM IST</span>
+                    <span class="text-[11px] font-semibold text-slate-400">Night Sprint</span>
+                  </div>
+                  <h4 class="text-base font-bold text-white">Midnight Debugging Lounge &amp; Cloud Architect Office Hours</h4>
+                  <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                    Microsoft engineers and DU/SRM mentors available on-floor for late-night bottleneck resolution, load-testing advice, and deployment debugging.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ================= DAY 3 CONTENT ================= -->
+          <div id="day3-content" class="day-schedule-pane hidden space-y-6">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Day 3: Wednesday, 21 October 2026</h3>
+                <p class="text-xs text-slate-500 mt-0.5">Theme: Code Freeze, Grand Stage Pitches, Project Expo &amp; Valedictory Prize Distribution</p>
+              </div>
+              <span class="text-xs font-mono font-bold px-3 py-1 bg-amber-50 text-amber-900 rounded-md border border-amber-300">
+                Window: 07:30 AM &ndash; 03:00 PM Sharp (Concludes)
+              </span>
+            </div>
+
+            <div class="relative border-l-2 border-slate-200 ml-3 sm:ml-4 pl-5 sm:pl-8 space-y-8">
+              
+              <!-- Event 3.1: 07:30 AM -->
+              <div class="timeline-item relative" data-category="meals">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-amber-500"></div>
+                <div class="bg-amber-50/50 p-4 rounded-xl border border-amber-200">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono text-xs font-bold text-amber-800 bg-amber-100 px-2.5 py-1 rounded">07:30 AM &ndash; 08:30 AM IST</span>
+                    <span class="text-[11px] text-slate-500">Dining Annex</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-900">Breakfast &amp; Final Deployment Refresh</h4>
+                  <p class="text-xs text-slate-600 mt-0.5">Breakfast served. Teams finalize pitch decks, demo videos, and cloud deployments.</p>
+                </div>
+              </div>
+
+              <!-- Event 3.2: 09:30 AM -->
+              <div class="timeline-item relative" data-category="hackathon">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-rose-600 border-4 border-rose-200"></div>
+                <div class="bg-rose-50 border border-rose-300 p-4 sm:p-5 rounded-xl">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="font-mono text-xs font-bold text-rose-900 bg-rose-200 px-2.5 py-1 rounded">09:30 AM SHARP</span>
+                    <span class="text-xs font-bold text-rose-800 bg-rose-100 px-2.5 py-0.5 rounded border border-rose-300">HARD DEADLINE</span>
+                  </div>
+                  <h4 class="text-base font-bold text-rose-950">Official Code Freeze &amp; GitHub Lockout</h4>
+                  <p class="text-xs sm:text-sm text-rose-900 mt-1">
+                    All Git commits, DevPost summaries, live demo links, and architectural documentation must be submitted. Any repository commits after 09:30:00 AM will automatically void eligibility.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Event 3.3: 10:00 AM -->
+              <div class="timeline-item relative" data-category="keynote">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-[#0078D4]"></div>
+                <div class="bg-slate-50 hover:bg-slate-100/80 transition p-4 sm:p-5 rounded-xl border border-slate-200">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span class="font-mono text-xs font-bold text-sky-800 bg-sky-100 px-2.5 py-1 rounded">10:00 AM &ndash; 12:15 PM IST</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-[11px] font-semibold text-slate-600 bg-white border border-slate-200 px-2 py-0.5 rounded">Main Auditorium</span>
+                      <span class="text-[11px] font-bold text-sky-800 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">Top 12 Finalists</span>
+                    </div>
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900">Grand Jury Pitches: Live Demonstrations &amp; Technical Defense</h4>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                    The top 12 shortlisted teams present on the main stage before the joint Grand Jury (Microsoft Engineering Directors, SRM KTR Research Chairs, and Delhi University Faculty).
+                  </p>
+                  <div class="mt-2 text-xs font-semibold text-slate-500">
+                    &bull; Format: 7 Minutes Live Product Demo + 3 Minutes Rapid Q&amp;A Defense per team.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event 3.4: 12:15 PM -->
+              <div class="timeline-item relative" data-category="workshop">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-slate-700"></div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono text-xs font-bold text-slate-800 bg-slate-200 px-2.5 py-1 rounded">12:15 PM &ndash; 01:15 PM IST</span>
+                    <span class="text-[11px] text-slate-500">Exhibition Foyer</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-900">Project Expo Showcase &amp; Academic Peer Review</h4>
+                  <p class="text-xs text-slate-600 mt-0.5">Open booth showcase for Delhi University and SRM faculty, visiting students, and technical recruiters.</p>
+                </div>
+              </div>
+
+              <!-- Event 3.5: 01:15 PM -->
+              <div class="timeline-item relative" data-category="meals">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-amber-500"></div>
+                <div class="bg-amber-50/50 p-3.5 rounded-xl border border-amber-200 flex items-center justify-between">
+                  <div>
+                    <span class="font-mono text-xs font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded mr-2">01:15 PM &ndash; 02:00 PM IST</span>
+                    <span class="text-xs font-bold text-slate-900">Networking Luncheon</span>
+                  </div>
+                  <span class="text-[11px] text-slate-500">Dining Annex</span>
+                </div>
+              </div>
+
+              <!-- Event 3.6: 02:00 PM -->
+              <div class="timeline-item relative" data-category="keynote">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-emerald-600 border-4 border-white shadow"></div>
+                <div class="bg-slate-900 text-white p-5 rounded-xl border border-slate-800">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span class="font-mono text-xs font-bold text-emerald-400 bg-slate-800 px-2.5 py-1 rounded border border-slate-700">02:00 PM &ndash; 02:45 PM IST</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-[11px] font-semibold text-slate-300 bg-slate-800 px-2 py-0.5 rounded">Sir Shankar Lal Concert Hall</span>
+                      <span class="text-[11px] font-bold text-amber-400 bg-amber-950 px-2 py-0.5 rounded border border-amber-700">Awards Plenary</span>
+                    </div>
+                  </div>
+                  <h4 class="text-lg font-extrabold text-white">Valedictory Ceremony &amp; Prize Distribution</h4>
+                  <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                    Announcement of Champions, Runners-up, and Track Winners. Awarding of ₹3,50,000 in cash prizes, Microsoft Azure Cloud Innovation Trophies, and SRM KTR Incubation Citations by the Patrons.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Event 3.7: 02:45 PM - 03:00 PM -->
+              <div class="timeline-item relative" data-category="keynote">
+                <div class="absolute -left-[27px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-4 border-slate-800"></div>
+                <div class="bg-slate-100 p-4 sm:p-5 rounded-xl border border-slate-300">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono text-xs font-bold text-slate-900 bg-white border border-slate-300 px-2.5 py-1 rounded">02:45 PM &ndash; 03:00 PM IST</span>
+                    <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">OFFICIAL CONCLUSION</span>
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900">Vote of Thanks, Certificate Handout &amp; Formal Adjournment</h4>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Formal concluding remarks by Organizing Secretaries from SRM KTR and University of Delhi. Distribution of physical certificates of merit and participation. The Conclave officially adjourns promptly at <strong>3:00 PM IST</strong>.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HACKATHON TRACKS & CHALLENGES -->
+    <section id="tracks" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
+            TECHNICAL PROBLEM STATEMENTS
+          </div>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">
+            The 4 Innovation Challenge Tracks
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 mt-2">
+            Engineered around real national infrastructure challenges and enterprise cloud scale, mentored directly by SRM KTR professors and Microsoft architects.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          
+          <!-- Track 1 -->
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-sky-300 hover:shadow-md transition">
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-8 h-8 rounded-lg bg-sky-100 text-sky-800 font-bold flex items-center justify-center text-sm">T1</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-sky-50 text-sky-700 border border-sky-200">Microsoft Azure Track</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">High-Resilience Enterprise Cloud Systems</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-4 leading-relaxed">
+              Design and implement fault-tolerant, horizontally scalable multi-tenant services capable of zero-downtime failover across Azure paired regions using Cosmos DB multi-master replication and AKS.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-500 border-t border-slate-200 pt-3">
+              <div><strong class="text-slate-700">Evaluation:</strong> Chaos engineering test resilience, latency under 5,000 concurrent RPS, and automated IaC (Terraform / Bicep).</div>
+              <div><strong class="text-slate-700">Supported Stack:</strong> Azure Functions, Cosmos DB, AKS, GitHub Actions.</div>
+            </div>
+          </div>
+
+          <!-- Track 2 -->
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-emerald-300 hover:shadow-md transition">
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-sm">T2</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">SRM KTR Research Hub</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Applied Edge Intelligence &amp; Edge Analytics</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-4 leading-relaxed">
+              Build low-power on-device machine learning inference engines for sensor networks, smart agriculture, or acoustic fault detection without relying on persistent cloud connectivity.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-500 border-t border-slate-200 pt-3">
+              <div><strong class="text-slate-700">Evaluation:</strong> Quantization benchmarks (ONNX Runtime, INT8), battery-draw profile, and inference latency under 15ms.</div>
+              <div><strong class="text-slate-700">Supported Stack:</strong> ONNX, Embedded C++, TinyML, Raspberry Pi / Jetson emulation.</div>
+            </div>
+          </div>
+
+          <!-- Track 3 -->
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-amber-300 hover:shadow-md transition">
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 font-bold flex items-center justify-center text-sm">T3</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-amber-50 text-amber-700 border border-amber-200">Delhi University Mission</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Urban Mobility &amp; Civic Air Quality Intelligence</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-4 leading-relaxed">
+              Leverage real-time Delhi NCR environmental sensors and public transit telemetry (DTC bus &amp; Delhi Metro APIs) to optimize dynamic last-mile commuter routes and hyper-local smog mitigation.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-500 border-t border-slate-200 pt-3">
+              <div><strong class="text-slate-700">Evaluation:</strong> Algorithm efficiency on live Delhi sensor datasets, geospatial spatial-temporal modeling, and citizen UX.</div>
+              <div><strong class="text-slate-700">Supported Stack:</strong> PostGIS, OpenData Delhi APIs, React, Python geospatial.</div>
+            </div>
+          </div>
+
+          <!-- Track 4 -->
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-slate-400 hover:shadow-md transition">
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-8 h-8 rounded-lg bg-slate-200 text-slate-800 font-bold flex items-center justify-center text-sm">T4</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 text-slate-700 border border-slate-300">Open Innovation</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Zero-Trust Security &amp; Open Banking Infrastructure</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-4 leading-relaxed">
+              Create provably secure decentralized identity protocols, verifiable credential systems (India Stack / DigiLocker integration), or robust fraud detection systems for high-volume transactions.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-500 border-t border-slate-200 pt-3">
+              <div><strong class="text-slate-700">Evaluation:</strong> Cryptographic soundness, OWASP Top 10 hardening, penetration testing durability.</div>
+              <div><strong class="text-slate-700">Supported Stack:</strong> Rust, Go, OpenID Connect, OAuth2.0, WebAuthn.</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRIZES & GRANTS BREAKDOWN -->
+    <section id="prizes" class="py-16 sm:py-20 bg-slate-900 text-white border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded text-xs font-bold bg-amber-950 text-amber-300 border border-amber-800">
+            AWARDS &amp; RECOGNITION
+          </div>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight mt-2">
+            ₹3,50,000 Cash Pool + Microsoft Azure Credits
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 mt-2">
+            Supported through SRM KTR’s Endowment Fund and Microsoft Student Developer Grant.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch mb-10">
+          
+          <!-- 1st Runner Up -->
+          <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 flex flex-col justify-between order-2 md:order-1">
+            <div>
+              <span class="inline-block px-3 py-1 text-xs font-bold text-slate-300 bg-slate-700/80 rounded-full mb-4">
+                1st Runner-Up
+              </span>
+              <div class="text-3xl font-extrabold text-white mb-1">₹1,00,000</div>
+              <span class="text-xs font-semibold text-slate-400 block mb-4">Direct Bank Grant + Trophy</span>
+              <ul class="space-y-2.5 text-xs text-slate-300">
+                <li class="flex items-center gap-2">&bull; $3,000 Microsoft Azure Startup Credits</li>
+                <li class="flex items-center gap-2">&bull; Fast-track Interview for Microsoft SWE Internship</li>
+                <li class="flex items-center gap-2">&bull; SRM KTR Innovation Lab Incubation Mentorship</li>
+                <li class="flex items-center gap-2">&bull; Official Certificate of Merit by DU &amp; SRM KTR</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Champion (Featured Center) -->
+          <div class="bg-gradient-to-b from-slate-800 to-slate-900 border-2 border-amber-400 rounded-2xl p-7 flex flex-col justify-between shadow-xl shadow-amber-950/20 relative order-1 md:order-2">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-amber-400 text-slate-950 text-xs font-extrabold px-4 py-0.5 rounded-full uppercase tracking-wider">
+              Grand Champion Team
+            </div>
+            <div>
+              <span class="inline-block px-3 py-1 text-xs font-bold text-amber-300 bg-amber-950/80 rounded-full mb-4 border border-amber-800">
+                First Prize &bull; National Winner
+              </span>
+              <div class="text-4xl sm:text-5xl font-extrabold text-white mb-1">₹1,50,000</div>
+              <span class="text-xs font-semibold text-amber-300 block mb-4">Direct Cash Grant + Rolling Trophy</span>
+              <ul class="space-y-2.5 text-xs sm:text-sm text-slate-200">
+                <li class="flex items-center gap-2">&bull; <strong>$5,000 Microsoft Azure Cloud Credits</strong></li>
+                <li class="flex items-center gap-2">&bull; Direct Entry into Microsoft for Startups Founders Hub</li>
+                <li class="flex items-center gap-2">&bull; ₹10 Lakhs Seed Funding Eligibility at SRM-SIIC</li>
+                <li class="flex items-center gap-2">&bull; Technical Feature in Microsoft Developer Digest India</li>
+                <li class="flex items-center gap-2">&bull; 1-Year JetBrains All-Products Pack for each member</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 2nd Runner Up -->
+          <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 flex flex-col justify-between order-3">
+            <div>
+              <span class="inline-block px-3 py-1 text-xs font-bold text-slate-300 bg-slate-700/80 rounded-full mb-4">
+                2nd Runner-Up
+              </span>
+              <div class="text-3xl font-extrabold text-white mb-1">₹50,000</div>
+              <span class="text-xs font-semibold text-slate-400 block mb-4">Direct Cash Award + Trophy</span>
+              <ul class="space-y-2.5 text-xs text-slate-300">
+                <li class="flex items-center gap-2">&bull; $1,500 Microsoft Azure Credits</li>
+                <li class="flex items-center gap-2">&bull; SRM KTR Incubation Fast-Track</li>
+                <li class="flex items-center gap-2">&bull; Official Certificate of Excellence</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Special Track Bounties -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="bg-slate-800/60 border border-slate-700 p-4 rounded-xl flex items-center justify-between">
+            <div>
+              <span class="text-xs font-bold text-sky-400 uppercase tracking-wide">Special Bounty 1</span>
+              <h4 class="text-sm font-bold text-white mt-0.5">Most Scalable Azure Cloud Architecture</h4>
+              <p class="text-xs text-slate-400">Awarded directly by Microsoft Cloud Solution Architects</p>
+            </div>
+            <div class="text-right">
+              <span class="font-mono text-lg font-extrabold text-white">₹25,000</span>
+              <span class="block text-[11px] text-slate-400">+ $2k Azure credits</span>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/60 border border-slate-700 p-4 rounded-xl flex items-center justify-between">
+            <div>
+              <span class="text-xs font-bold text-emerald-400 uppercase tracking-wide">Special Bounty 2</span>
+              <h4 class="text-sm font-bold text-white mt-0.5">Best All-Women Engineering Team</h4>
+              <p class="text-xs text-slate-400">Sponsored by SRM KTR Women in Technology Chapter</p>
+            </div>
+            <div class="text-right">
+              <span class="font-mono text-lg font-extrabold text-white">₹25,000</span>
+              <span class="block text-[11px] text-slate-400">+ Industry Mentorship</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SPEAKERS & ACADEMIC COMMITTEE -->
+    <section id="speakers" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded text-xs font-bold bg-sky-50 text-sky-800 border border-sky-200">
+            LEADERSHIP &amp; JURY
+          </div>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">
+            Distinguished Speakers &amp; Mentors
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 mt-2">
+            Evaluated by industry engineering leaders and esteemed academic faculty.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Speaker 1 -->
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center">
+            <div class="w-20 h-20 mx-auto rounded-full bg-slate-200 border-2 border-sky-600 flex items-center justify-center font-bold text-xl text-slate-700 mb-3 shadow-inner">
+              RV
+            </div>
+            <h3 class="font-bold text-slate-900 text-sm">Dr. R. Venkataraman</h3>
+            <p class="text-xs font-medium text-sky-700 mt-0.5">Dean, School of Computing</p>
+            <p class="text-xs text-slate-500 mt-1">SRM Institute of Science &amp; Technology (KTR)</p>
+            <span class="inline-block mt-3 px-2 py-0.5 text-[11px] font-semibold bg-white border border-slate-200 rounded text-slate-600">
+              Patron &amp; Keynote
+            </span>
+          </div>
+
+          <!-- Speaker 2 -->
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center">
+            <div class="w-20 h-20 mx-auto rounded-full bg-slate-200 border-2 border-[#0078D4] flex items-center justify-center font-bold text-xl text-slate-700 mb-3 shadow-inner">
+              AS
+            </div>
+            <h3 class="font-bold text-slate-900 text-sm">Ananya Sengupta</h3>
+            <p class="text-xs font-medium text-sky-700 mt-0.5">Principal Cloud Architect</p>
+            <p class="text-xs text-slate-500 mt-1">Microsoft India (Azure Engineering)</p>
+            <span class="inline-block mt-3 px-2 py-0.5 text-[11px] font-semibold bg-white border border-slate-200 rounded text-slate-600">
+              Grand Jury &amp; Masterclass Lead
+            </span>
+          </div>
+
+          <!-- Speaker 3 -->
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center">
+            <div class="w-20 h-20 mx-auto rounded-full bg-slate-200 border-2 border-emerald-600 flex items-center justify-center font-bold text-xl text-slate-700 mb-3 shadow-inner">
+              AK
+            </div>
+            <h3 class="font-bold text-slate-900 text-sm">Prof. Alok Kumar</h3>
+            <p class="text-xs font-medium text-emerald-700 mt-0.5">Faculty of Technology</p>
+            <p class="text-xs text-slate-500 mt-1">University of Delhi (North Campus)</p>
+            <span class="inline-block mt-3 px-2 py-0.5 text-[11px] font-semibold bg-white border border-slate-200 rounded text-slate-600">
+              Host Convener
+            </span>
+          </div>
+
+          <!-- Speaker 4 -->
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center">
+            <div class="w-20 h-20 mx-auto rounded-full bg-slate-200 border-2 border-amber-600 flex items-center justify-center font-bold text-xl text-slate-700 mb-3 shadow-inner">
+              VR
+            </div>
+            <h3 class="font-bold text-slate-900 text-sm">Vikramaditya Rathore</h3>
+            <p class="text-xs font-medium text-amber-700 mt-0.5">Developer Relations Director</p>
+            <p class="text-xs text-slate-500 mt-1">Microsoft IDC</p>
+            <span class="inline-block mt-3 px-2 py-0.5 text-[11px] font-semibold bg-white border border-slate-200 rounded text-slate-600">
+              Opening Keynote Speaker
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VENUE, TRANSIT & ACCOMMODATION -->
+    <section id="venue" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <div class="lg:col-span-6 space-y-5">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded text-xs font-bold bg-sky-100 text-sky-800 border border-sky-300">
+              LOCATION &amp; LOGISTICS
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              Host Venue: University of Delhi (North Campus)
+            </h2>
+            <p class="text-sm text-slate-700 leading-relaxed">
+              All sessions, workshops, coding marathons, and the grand auditorium ceremonies will take place inside the historic <strong>Conference Centre Complex</strong>, University of Delhi, North Campus.
+            </p>
+
+            <div class="space-y-3 pt-2">
+              <div class="flex items-start gap-3 p-3.5 bg-white rounded-xl border border-slate-200">
+                <div class="p-2 bg-sky-50 text-sky-700 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900 uppercase">Exact Physical Address</h4>
+                  <p class="text-xs text-slate-600 mt-0.5">Conference Centre, Opp. Botany Dept, University Enclave, North Campus, University of Delhi, Delhi &ndash; 110007.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 p-3.5 bg-white rounded-xl border border-slate-200">
+                <div class="p-2 bg-amber-50 text-amber-700 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900 uppercase">Delhi Metro Connectivity</h4>
+                  <p class="text-xs text-slate-600 mt-0.5"><strong>Vishwa Vidyalaya Metro Station (Yellow Line) &ndash; Gate No. 3.</strong> Frequent university e-rickshaws (₹10) and walkable in 7 minutes directly to Conference Centre.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 p-3.5 bg-white rounded-xl border border-slate-200">
+                <div class="p-2 bg-emerald-50 text-emerald-700 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900 uppercase">Outstation Lodging for SRM KTR &amp; National Teams</h4>
+                  <p class="text-xs text-slate-600 mt-0.5">Complimentary gender-segregated dorm rooms assigned at University Guest House &amp; Jubilee Hall Hostel for checked-in teams traveling from outside Delhi NCR.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive Venue Map / Guide Card -->
+          <div class="lg:col-span-6 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+            <h3 class="text-base font-bold text-slate-900 mb-4 flex items-center justify-between">
+              <span>Campus Navigation &amp; Security Protocol</span>
+              <span class="text-xs text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-semibold border border-emerald-200">24/7 Security Entry</span>
+            </h3>
+
+            <!-- Simulated Map Card with Clean Schematic -->
+            <div class="relative bg-slate-900 rounded-xl p-6 text-white overflow-hidden mb-4 border border-slate-800">
+              <div class="text-xs font-mono text-sky-400 mb-1">DU NORTH CAMPUS &bull; ZONE B</div>
+              <div class="text-lg font-bold text-white mb-2">Conference Centre &amp; Tech Labs</div>
+              <div class="space-y-1.5 text-xs text-slate-300">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  <span><strong>Auditorium:</strong> Sir Shankar Lal Concert Hall</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+                  <span><strong>Hackathon Arena:</strong> Labs A, B &amp; Central Computing Facility</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                  <span><strong>Dining:</strong> Faculty Lawns &amp; Catering Annex</span>
+                </div>
+              </div>
+              <div class="mt-4 pt-3 border-t border-slate-700 flex items-center justify-between text-xs">
+                <span class="text-slate-400">Wi-Fi SSID: <strong class="text-white">DU-SRM-HACK2026</strong></span>
+                <span class="text-emerald-400 font-mono">1 Gbps Dedicated</span>
+              </div>
+            </div>
+
+            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-700 space-y-1.5">
+              <p><strong>Gate Protocol:</strong> Entry via University Gate No. 4 (Chhatra Marg). State you are a delegate for the DU-SRM Conclave.</p>
+              <p><strong>Vehicle Parking:</strong> Free designated visitor parking inside the Faculty of Arts complex.</p>
+              <p><strong>Emergency Medical Desk:</strong> WUS Health Centre, North Campus is 200m adjacent to the venue.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+    <section id="faq" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded text-xs font-bold bg-slate-100 text-slate-800 border border-slate-300">
+            CLARIFICATIONS &amp; POLICIES
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-2">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-sm text-slate-600 mt-1">
+            Everything you need to know about participation, logistics, and rules.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <div class="faq-card bg-slate-50 border border-slate-200 rounded-xl p-5 cursor-pointer" onclick="toggleFaq(this)">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">Is there any registration or participation fee?</h3>
+              <span class="faq-icon text-slate-400 text-xl font-bold">+</span>
+            </div>
+            <div class="faq-answer hidden text-xs sm:text-sm text-slate-600 mt-3 pt-3 border-t border-slate-200">
+              No. Admission is 100% free. Thanks to full sponsorship by SRM Institute of Science &amp; Technology (SRM KTR) and Microsoft India, participation, high-speed Wi-Fi, Azure credits, merchandise, and all meals (breakfast, lunch, dinner, midnight snacks) are fully covered for all shortlisted teams.
+            </div>
+          </div>
+
+          <div class="faq-card bg-slate-50 border border-slate-200 rounded-xl p-5 cursor-pointer" onclick="toggleFaq(this)">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">Who is eligible to participate in the hackathon?</h3>
+              <span class="faq-icon text-slate-400 text-xl font-bold">+</span>
+            </div>
+            <div class="faq-answer hidden text-xs sm:text-sm text-slate-600 mt-3 pt-3 border-t border-slate-200">
+              Undergraduate and Postgraduate students enrolled in any recognized engineering, computer science, or technology institution across India are eligible. Inter-college and inter-year teams (2 to 4 members) are allowed. Cross-institutional collaboration between SRM KTR and Delhi University students is warmly encouraged!
+            </div>
+          </div>
+
+          <div class="faq-card bg-slate-50 border border-slate-200 rounded-xl p-5 cursor-pointer" onclick="toggleFaq(this)">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">What is the exact start and end schedule?</h3>
+              <span class="faq-icon text-slate-400 text-xl font-bold">+</span>
+            </div>
+            <div class="faq-answer hidden text-xs sm:text-sm text-slate-600 mt-3 pt-3 border-t border-slate-200">
+              The event commences on <strong>Monday, 19 October 2026 at 11:00 AM IST</strong> with delegate credentialing and inaugural keynotes. It runs continuously through Day 2 (20 October), and formally concludes on <strong>Wednesday, 21 October 2026 at 3:00 PM IST</strong> following the Valedictory Awards ceremony.
+            </div>
+          </div>
+
+          <div class="faq-card bg-slate-50 border border-slate-200 rounded-xl p-5 cursor-pointer" onclick="toggleFaq(this)">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">How do outstation accommodations work?</h3>
+              <span class="faq-icon text-slate-400 text-xl font-bold">+</span>
+            </div>
+            <div class="faq-answer hidden text-xs sm:text-sm text-slate-600 mt-3 pt-3 border-t border-slate-200">
+              Teams selected from outside the Delhi National Capital Region (including visiting delegates traveling from SRM Kattankulathur campus) will receive complimentary university dormitory accommodation from the evening of October 18 to the evening of October 21. Check the "Accommodation Required" checkbox during registration.
+            </div>
+          </div>
+
+          <div class="faq-card bg-slate-50 border border-slate-200 rounded-xl p-5 cursor-pointer" onclick="toggleFaq(this)">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">What hardware and software must we bring?</h3>
+              <span class="faq-icon text-slate-400 text-xl font-bold">+</span>
+            </div>
+            <div class="faq-answer hidden text-xs sm:text-sm text-slate-600 mt-3 pt-3 border-t border-slate-200">
+              Teams should bring their own laptops, chargers, extension cords, and any specific IoT or hardware kits required for their prototype. High-speed Wi-Fi, Ethernet patch cables, 230V power points at every desk, and Microsoft Azure cloud access keys will be provided.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- OFFICIAL FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 text-xs border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-800">
+        
+        <div class="space-y-3 md:col-span-2">
+          <div class="flex items-center gap-3">
+            <span class="font-bold text-sm text-white">DU-SRM National Tech Conclave 2026</span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-md">
+            A joint initiative of <strong>SRM Institute of Science &amp; Technology, Kattankulathur</strong> and <strong>University of Delhi</strong>, conducted in official partnership with <strong>Microsoft</strong>. Empowering the next generation of Indian cloud engineers and innovators.
+          </p>
+          <div class="text-[11px] text-slate-500">
+            Dates: 19 October (11:00 AM) &ndash; 21 October (3:00 PM) 2026 &bull; Delhi University North Campus
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-200 uppercase tracking-wider text-xs mb-3">Organizing Secretariats</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li>SRM KTR Computing Secretariat: <br><a href="mailto:conclave2026@srmist.edu.in" class="text-sky-400 hover:underline">conclave2026@srmist.edu.in</a></li>
+            <li>DU Faculty of Technology: <br><a href="mailto:techconclave@du.ac.in" class="text-sky-400 hover:underline">techconclave@du.ac.in</a></li>
+            <li>Microsoft Student Developers: <br><span class="text-slate-300">partner-india@microsoft.com</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-200 uppercase tracking-wider text-xs mb-3">Emergency Coordinators</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li>Student Lead (SRM KTR): +91 98401 23456</li>
+            <li>Student Lead (DU): +91 98112 34567</li>
+            <li>Campus Security Control: 011-27667725</li>
+            <li>WUS Health Centre: 011-27667908</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+        <div>
+          &copy; 2026 SRM Institute of Science and Technology &amp; University of Delhi. All rights reserved. Supported by Microsoft Azure Academic Sponsorship.
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-slate-300">Code of Conduct</a>
+          <span>&bull;</span>
+          <a href="#" class="hover:text-slate-300">Security &amp; Lab Guidelines</a>
+          <span>&bull;</span>
+          <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= REGISTRATION MODAL ================= -->
+  <div id="regModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm overflow-y-auto p-4 sm:p-6 flex items-center justify-center">
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-2xl max-w-xl w-full p-6 sm:p-8 relative my-8">
+      
+      <!-- Close Button -->
+      <button onclick="closeRegistrationModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1.5 rounded-lg border border-slate-200" aria-label="Close modal">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div id="regFormContainer">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-xs font-bold text-sky-800 bg-sky-100 px-2 py-0.5 rounded">OFFICIAL ENTRY</span>
+          <span class="text-xs text-slate-500">Sponsored by SRM KTR &bull; Microsoft</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Delegate Team Registration</h3>
+        <p class="text-xs text-slate-600 mt-1 mb-6">
+          Submit details for the 48-Hour National Hackathon (19&ndash;21 October 2026 at DU North Campus). Free entry.
+        </p>
+
+        <form id="delegateForm" onsubmit="handleRegistrationSubmit(event)" class="space-y-4 text-xs">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-bold text-slate-800 mb-1" for="teamName">Team Name *</label>
+              <input type="text" id="teamName" required placeholder="e.g. SRM Azure Knights" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:outline-none" />
+            </div>
+
+            <div>
+              <label class="block font-bold text-slate-800 mb-1" for="institution">College / University *</label>
+              <input type="text" id="institution" required placeholder="e.g. SRM IST Kattankulathur / DU" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:outline-none" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-bold text-slate-800 mb-1" for="leadName">Team Leader Full Name *</label>
+              <input type="text" id="leadName" required placeholder="e.g. Rohan Sharma" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:outline-none" />
+            </div>
+
+            <div>
+              <label class="block font-bold text-slate-800 mb-1" for="leadEmail">Institutional Email *</label>
+              <input type="email" id="leadEmail" required placeholder="name@srmist.edu.in or du.ac.in" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:outline-none" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-bold text-slate-800 mb-1" for="leadPhone">Contact WhatsApp Number *</label>
+              <input type="tel" id="leadPhone" required placeholder="+91 98765 43210" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:outline-none" />
+            </div>
+
+            <div>
+              <label class="block font-bold text-slate-800 mb-1" for="teamSize">Total Team Members *</label>
+              <select id="teamSize" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:outline-none bg-white">
+                <option value="2">2 Members</option>
+                <option value="3" selected>3 Members</option>
+                <option value="4">4 Members (Maximum)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-bold text-slate-800 mb-1" for="prefTrack">Preferred Innovation Track *</label>
+            <select id="prefTrack" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:outline-none bg-white">
+              <option value="Track 1: High-Resilience Enterprise Cloud (Azure)">Track 1: High-Resilience Enterprise Cloud (Microsoft Azure)</option>
+              <option value="Track 2: Applied Edge Intelligence & Analytics (SRM KTR)">Track 2: Applied Edge Intelligence &amp; Analytics (SRM KTR)</option>
+              <option value="Track 3: Urban Mobility & Civic Tech (Delhi University)">Track 3: Urban Mobility &amp; Civic Tech (Delhi University)</option>
+              <option value="Track 4: Zero-Trust Security & Open Banking">Track 4: Zero-Trust Security &amp; Open Banking</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block font-bold text-slate-800 mb-1" for="repoUrl">GitHub / Portfolio Organization URL</label>
+            <input type="url" id="repoUrl" placeholder="https://github.com/your-team" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:outline-none" />
+          </div>
+
+          <!-- Outstation Logistics Checkbox -->
+          <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
+            <div class="flex items-center gap-2">
+              <input type="checkbox" id="needStay" class="w-4 h-4 text-sky-600 rounded border-slate-300 focus:ring-sky-500" />
+              <label for="needStay" class="text-xs font-semibold text-slate-800 cursor-pointer">
+                Accommodation Required (Free DU Campus Hostel for outstation / SRM KTR teams)
+              </label>
+            </div>
+            <div class="flex items-center gap-2">
+              <input type="checkbox" id="agreeCode" required class="w-4 h-4 text-sky-600 rounded border-slate-300 focus:ring-sky-500" />
+              <label for="agreeCode" class="text-xs text-slate-600 cursor-pointer">
+                I agree to the Event Code of Conduct and will present valid student IDs at registration on 19 October, 11:00 AM.
+              </label>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="w-full py-3 bg-[#0078D4] hover:bg-[#005A9E] text-white font-bold rounded-xl transition shadow">
+              Submit Official Application
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Confirmation Screen (Appears on Submit) -->
+      <div id="regSuccessContainer" class="hidden text-center py-6 space-y-4">
+        <div class="w-14 h-14 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">
+          &check;
+        </div>
+        <div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-300">
+          PROVISIONAL REGISTRATION CONFIRMED
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Application Received</h3>
+        <p class="text-xs text-slate-600 max-w-sm mx-auto">
+          Your team application has been officially logged in the SRM KTR &ndash; DU Joint Conclave registry.
+        </p>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-left text-xs max-w-sm mx-auto space-y-2 font-mono">
+          <div class="flex justify-between">
+            <span class="text-slate-500">Pass Token:</span>
+            <span id="passToken" class="font-bold text-slate-900">SRM-DU-2026-8942</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Reporting Time:</span>
+            <span class="font-bold text-sky-800">19 Oct 2026, 11:00 AM</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Venue Desk:</span>
+            <span class="font-bold text-slate-900">Desk A, DU Conference Centre</span>
+          </div>
+        </div>
+
+        <div class="pt-3 flex gap-3 justify-center">
+          <button onclick="downloadICS()" class="px-4 py-2 bg-slate-800 text-white rounded-lg text-xs font-bold hover:bg-slate-900 transition">
+            Save Schedule (.ics)
+          </button>
+          <button onclick="closeRegistrationModal()" class="px-4 py-2 bg-slate-200 text-slate-800 rounded-lg text-xs font-bold hover:bg-slate-300 transition">
+            Done
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC (Interactive Tabs, Countdown, iCal Generator, Filters) -->
+  <script>
+    // 1. Live Countdown Timer to October 19, 2026, 11:00:00 AM IST
+    function startCountdown() {
+      // Event Target: October 19, 2026, 11:00:00 AM Indian Standard Time (+05:30)
+      const targetDate = new Date("2026-10-19T11:00:00+05:30").getTime();
+
+      function update() {
+        const now = new Date().getTime();
+        const diff = targetDate - now;
+
+        if (diff <= 0) {
+          document.getElementById("cd-days").textContent = "00";
+          document.getElementById("cd-hours").textContent = "00";
+          document.getElementById("cd-mins").textContent = "00";
+          document.getElementById("cd-secs").textContent = "00";
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById("cd-days").textContent = String(days).padStart(2, "0");
+        document.getElementById("cd-hours").textContent = String(hours).padStart(2, "0");
+        document.getElementById("cd-mins").textContent = String(minutes).padStart(2, "0");
+        document.getElementById("cd-secs").textContent = String(seconds).padStart(2, "0");
+      }
+
+      update();
+      setInterval(update, 1000);
+    }
+
+    // 2. Day Switcher Tabs
+    function switchDay(dayId) {
+      // Hide all day panes
+      document.querySelectorAll(".day-schedule-pane").forEach(el => el.classList.add("hidden"));
+      
+      // Reset button styles
+      const btn1 = document.getElementById("tab-btn-day1");
+      const btn2 = document.getElementById("tab-btn-day2");
+      const btn3 = document.getElementById("tab-btn-day3");
+
+      [btn1, btn2, btn3].forEach(btn => {
+        btn.className = "flex-1 sm:flex-none text-left sm:text-center px-4 sm:px-6 py-3 rounded-xl font-bold text-sm transition bg-slate-100 text-slate-700 hover:bg-slate-200 flex items-center gap-2.5 justify-center";
+        btn.setAttribute("aria-selected", "false");
+        const dot = btn.querySelector("span");
+        if (dot) dot.className = "w-2.5 h-2.5 rounded-full bg-slate-400";
+      });
+
+      // Show selected pane
+      const targetPane = document.getElementById(dayId + "-content");
+      if (targetPane) targetPane.classList.remove("hidden");
+
+      // Highlight active button
+      const activeBtn = document.getElementById("tab-btn-" + dayId);
+      if (activeBtn) {
+        activeBtn.className = "flex-1 sm:flex-none text-left sm:text-center px-4 sm:px-6 py-3 rounded-xl font-bold text-sm transition bg-[#0078D4] text-white shadow-sm flex items-center gap-2.5 justify-center";
+        activeBtn.setAttribute("aria-selected", "true");
+        const dot = activeBtn.querySelector("span");
+        if (dot) dot.className = "w-2.5 h-2.5 rounded-full bg-white";
+      }
+    }
+
+    // 3. Category Filter
+    function filterSchedule(category) {
+      // Update filter button styling
+      document.querySelectorAll(".filter-btn").forEach(btn => {
+        btn.className = "filter-btn px-2.5 py-1 text-xs font-semibold rounded-md bg-slate-100 text-slate-700 hover:bg-slate-200";
+      });
+      event.target.className = "filter-btn px-2.5 py-1 text-xs font-semibold rounded-md bg-slate-800 text-white";
+
+      // Filter visible items in current active pane
+      const items = document.querySelectorAll(".timeline-item");
+      items.forEach(item => {
+        if (category === "all" || item.getAttribute("data-category") === category) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+
+    // 4. Modal Handlers
+    function openRegistrationModal() {
+      document.getElementById("regModal").classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeRegistrationModal() {
+      document.getElementById("regModal").classList.add("hidden");
+      document.body.style.overflow = "auto";
+    }
+
+    function handleRegistrationSubmit(e) {
+      e.preventDefault();
+      const randomToken = "SRM-DU-2026-" + Math.floor(1000 + Math.random() * 9000);
+      document.getElementById("passToken").textContent = randomToken;
+      document.getElementById("regFormContainer").classList.add("hidden");
+      document.getElementById("regSuccessContainer").classList.remove("hidden");
+    }
+
+    // 5. FAQ Accordion
+    function toggleFaq(card) {
+      const answer = card.querySelector(".faq-answer");
+      const icon = card.querySelector(".faq-icon");
+      if (answer.classList.contains("hidden")) {
+        answer.classList.remove("hidden");
+        icon.textContent = "−";
+        card.classList.add("bg-white", "shadow-sm");
+      } else {
+        answer.classList.add("hidden");
+        icon.textContent = "+";
+        card.classList.remove("bg-white", "shadow-sm");
+      }
+    }
+
+    // 6. Mobile Menu Toggle
+    function toggleMobileMenu() {
+      const m = document.getElementById("mobileMenu");
+      m.classList.toggle("hidden");
+    }
+
+    // 7. Official Calendar Generator (.ics)
+    function downloadICS() {
+      const icsData = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//SRM KTR and University of Delhi//Tech Conclave 2026//EN",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        "X-WR-CALNAME:DU-SRM National Tech Conclave 2026",
+        "X-WR-TIMEZONE:Asia/Kolkata",
+        "BEGIN:VEVENT",
+        "UID:conclave-2026-main@srmist.edu.in",
+        "DTSTAMP:20261016T000000Z",
+        "DTSTART:20261019T053000Z",
+        "DTEND:20261021T093000Z",
+        "SUMMARY:DU-SRM National Tech Conclave & 48-Hour Hackathon 2026",
+        "DESCRIPTION:Sponsored by SRM KTR in partnership with Microsoft. Hosted at University of Delhi Conference Centre.",
+        "LOCATION:Conference Centre, University of Delhi North Campus, Delhi - 110007",
+        "STATUS:CONFIRMED",
+        "END:VEVENT",
+        "END:VCALENDAR"
+      ].join("\r\n");
+
+      const blob = new Blob([icsData], { type: "text/calendar;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "DU-SRM-TechConclave-2026.ics");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    // Initialize countdown on DOM load
+    document.addEventListener("DOMContentLoaded", startCountdown);
+  </script>
+
+</body>
+</html>

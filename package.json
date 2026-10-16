@@ -1,0 +1,12 @@
+{
+  "name": "du-srm-techcon-2026",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DU-SRM National Tech Conclave 2026 in partnership with Microsoft",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "vercel": "^64.3.1"
+  }
+}
